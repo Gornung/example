@@ -19,4 +19,11 @@ public class BugTests {
 		// Expect IllegalArgumentException if called with empty array
 		assertThrows(IllegalArgumentException.class, () -> Bug.minimum(new int[0]));
 	}
+
+	@Test
+	public void testMaximum1() {
+		int[] a = {1, 2, 3, 4, 5, 6};
+
+		assertEquals(6, Bug.maximum(a));
+	}
 }
